@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Herbal Medicine</title>
+    <style>
+      h1 {
+        color: #40513b;
+        text-align: center;
+        font-size: 40px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      .medicine {
+        background: linear-gradient(
+          109.6deg,
+          rgb(251, 250, 225) 11.2%,
+          rgb(206, 240, 185) 47.5%,
+          rgb(100, 163, 111) 100.2%
+        );
+        text-align: center;
+        margin: 40px;
+        border-radius: 10px;
+        padding: 40px;
+      }
+      img {
+        max-width: 80%;
+        border-radius: 15px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+      }
+      .freeRecipe {
+        text-decoration: underline;
+      }
+      .ingredents {
+        line-height: 2;
+      }
+      ul {
+        list-style-position: inside;
+        padding-left: 0;
+      }
+      h4 {
+        color: #a25b5b;
+        font-size: 15px;
+        margin-bottom: 5px;
+      }
+      button {
+        background: #40513b;
+        border: 2px solid #40513b;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8);
+        color: white;
+        font-weight: bold;
+        padding: 15px 20px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #a25b5b;
+        color: #40513b;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="medicine">
+      <h1>Herbal Medicine</h1>
+      <h2>🌿<em>Natures healing hands</em></h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/069/575/original/Herbs.jpg?1677696858"
+        alt="Herbs"
+      />
+      <p>
+        <strong>Herbal medicine</strong> is the study of pharmacognosy and the
+        use of medicinal plants, which are a basis of traditional medicine.
+        Herbal mediction come in a variety of dose forms and has many recipes
+        for differnet needs.
+        <br />
+        <a href="https://en.wikipedia.org/wiki/Herbal_medicine" target="_blank">
+          Learn more on Wikipedia</a
+        >
+      </p>
+      <hr />
+      <h3>
+        <span class="freeRecipe">Free Recipe</span> <br />
+        <strong>Brain Alert Formula, Capsules</strong>
+      </h3>
+      <span class="ingredents">
+        <ul>
+          <li>2 parts ginko</li>
+          <li>2 parts gotu kola</li>
+          <li>1 part blueberry or bilberries (dried)</li>
+          <li>1 part reishi mushroom</li>
+          <li>1/4 part rosemary</li>
+        </ul>
+      </span>
+      <p>
+        Powder all herbs in a small grinder or blender and use to fill size 00
+        capsules. <strong><em>Take 2 capsules three times daily.</em></strong>
+      </p>
+      <h4>
+        Get weekly free recipes here! <br />
+        ⬇
+      </h4>
+      <button>Sign Up</button>
+    </div>
+    <script>
+      function recipeSignUp() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        if (email && name) {
+          alert("Thank you " + name + "! Hope you enjoy your weekly recipes!");
+        } else {
+          alert("Must have Name and Email to get Recipes-Sorry 😞");
+        }
+      }
+      let signUp = document.querySelector("button");
+
+      signUp.addEventListener("click", recipeSignUp);
+    </script>
+  </body>
+</html>
